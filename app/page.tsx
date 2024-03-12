@@ -7,6 +7,7 @@ import { Open_Sans } from "next/font/google";
 const opensans = Open_Sans({ weight: "300", subsets: ["latin"] });
 const paytone = Paytone_One({ weight: "400", subsets: ["latin"] });
 import profile from "./profile.jpg";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -45,12 +46,18 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="text-xl py-4 text-[#b8b8b8] inline-flex">
-                  <div className={opensans.className}>Projects</div>
                   <div className={opensans.className}>
-                    <div className="pl-12">Contact</div>
+                    <Link href="/projects">Projects</Link>
                   </div>
                   <div className={opensans.className}>
-                    <div className="pl-12">About</div>
+                    <div className="pl-12">
+                      <Link href="/contact">Contact</Link>
+                    </div>
+                  </div>
+                  <div className={opensans.className}>
+                    <div className="pl-12">
+                      <Link href="/about">About</Link>
+                    </div>
                   </div>
                 </div>
               </div>
