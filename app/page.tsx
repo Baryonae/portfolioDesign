@@ -8,6 +8,7 @@ const opensans = Open_Sans({ weight: "300", subsets: ["latin"] });
 const paytone = Paytone_One({ weight: "400", subsets: ["latin"] });
 import profile from "./profile.jpg";
 import Link from "next/link";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
                     <div className={opensans.className}>
                       <div className="items-center justify-center flex">
                         <div className="border-[#3b344e] border-2 rounded-full px-6 py-1 w-fit my-4">
-                          Video editor, graphics designer
+                          Video editor, graphics designer and digital artist
                         </div>
                       </div>
                     </div>
@@ -33,7 +34,7 @@ export default function Home() {
                       width={125}
                       height={100}
                       alt="no image"
-                      className="rounded-full"
+                      className="rounded-full border-2 border-white"
                     />
                     <div className=" p-2 mx-4">
                       Cliffsy
@@ -45,17 +46,26 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+
                 <div className="text-xl py-4 text-[#b8b8b8] inline-flex">
+                  <div className="text-sm pr-4 inline-flex gap-4">
+                    <Link href="https://www.instagram.com/cliffsy.no/">
+                      <FaInstagram size={28} className="opacity-45" />
+                    </Link>
+                    <Link href="https://www.youtube.com/cliffsyy">
+                      <FaYoutube size={28} className="opacity-45" />
+                    </Link>
+                  </div>
                   <div className={opensans.className}>
                     <Link href="/projects">Projects</Link>
                   </div>
                   <div className={opensans.className}>
-                    <div className="pl-12">
+                    <div className="pl-4">
                       <Link href="/contact">Contact</Link>
                     </div>
                   </div>
                   <div className={opensans.className}>
-                    <div className="pl-12">
+                    <div className="pl-4">
                       <Link href="/about">About</Link>
                     </div>
                   </div>
