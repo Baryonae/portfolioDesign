@@ -30,7 +30,7 @@ export default function Home() {
               </div>
             </div>
             <div className="my-12 text-xl">
-              <button className="p-4 bg-indigo-400 rounded-2xl mb-20">
+              <button className="px-16 p-4 bg-indigo-400 rounded-2xl mb-20">
                 Explore
               </button>{" "}
             </div>
@@ -52,6 +52,8 @@ export default function Home() {
                 some level of thingssome level of things some level of things
                 some
               </div>
+              <div></div>
+
               <div className="">
                 <button className="w-full bg-[#95d5b2] items-center p-4 text-sm text-white rounded-2xl">
                   Open
