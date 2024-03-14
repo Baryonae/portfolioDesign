@@ -4,10 +4,12 @@ import project1 from "./project1.png";
 import Image from "next/image";
 import motion from "./motion.jpeg";
 import motion2 from "./motion2.jpeg";
+import { Chip } from "@nextui-org/react";
 const opensans = Open_Sans({ weight: "300", subsets: ["latin"] });
 const paytone = Paytone_One({ weight: "400", subsets: ["latin"] });
 import { IoMdCheckmark } from "react-icons/io";
-
+import Projects from "./projects";
+import Trending from "./Trending";
 export default function Home() {
   return (
     <div>
@@ -38,62 +40,38 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="w-full h-fit bg-[#d8f3dc] p-20 max-sm:p-6">
         <div className="text-center items-center text-5xl text-[#081c15] mt-6">
-          <div className={opensans.className}>Trending Projects</div>
-          <div className="py-8 inline-flex gap-10 max-sm:flex-col mt-8">
-            <div className="border-2 border-[#95d5b2] rounded-xl w-[300px] h-[350px] p-6 mx-2">
-              <Image
-                src={project1}
-                width={300}
-                alt="no image"
-                className="rounded-2xl"
-              />
-              <div className="text-sm w-[250px] mt-6 mb-4">
-                some level of thingssome level of things some level of things
-                some
-              </div>
-              <div></div>
-
-              <div className="">
-                <button className="w-full bg-[#95d5b2] items-center p-4 text-sm bg-opacity-20 text-[#408d63] rounded-2xl">
-                  Open
-                </button>
-              </div>
+          <div className={opensans.className}>
+            <div className="inline-flex max-sm:flex-col justify-center items-center">
+              <div className="">Trending</div>
+              <Chip color="primary" variant="flat" className="mx-6 mt-4">
+                Recommended
+              </Chip>
             </div>
-            <div className="border-2 border-[#95d5b2] rounded-xl w-[300px] h-[350px] p-6 mx-2">
-              <Image
-                src={motion}
-                width={300}
-                alt="no image"
-                className="rounded-2xl"
-              />
-              <div className="text-sm w-[250px] mt-6 mb-4">
-                some level of thingssome level of things some level of things
-                some hello again lol idk
-              </div>
-              <div className="">
-                <button className="w-full bg-[#95d5b2] bg-opacity-20 text-[#408d63] items-center p-4 text-sm  rounded-2xl">
-                  Open
-                </button>
-              </div>
+          </div>
+          <div className="py-8 l mt-8">
+            <Trending />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="py-20 bg-[#06030a] px-12">
+          <div className="text-4xl text-[#e0aaff] text-center items-center w-full flex justify-center flex-col gap-12 ">
+            <div className={opensans.className}>
+              <Chip
+                variant="shadow"
+                classNames={{
+                  base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30 p-8 text-2xl ",
+                  content: "drop-shadow shadow-black text-whiteanimate-pulse",
+                }}
+              >
+                Projects
+              </Chip>
             </div>
-            <div className="border-2 border-[#95d5b2] rounded-xl w-[300px] h-[350px] p-6 mx-2">
-              <Image
-                src={motion2}
-                width={300}
-                alt="no image"
-                className="rounded-2xl"
-              />
-              <div className="text-sm w-[250px] mt-6 mb-4">
-                some level of thingssome level of things some level of things
-                some
-              </div>
-              <div className="">
-                <button className="w-full bg-[#95d5b2] items-center p-4 text-sm bg-opacity-20 text-[#408d63] rounded-2xl">
-                  Open
-                </button>
-              </div>
+            <div className="w-fit">
+              <Projects />
             </div>
           </div>
         </div>
@@ -280,6 +258,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div></div>
     </div>
   );
 }
