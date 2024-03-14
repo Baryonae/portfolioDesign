@@ -85,7 +85,7 @@ export default function Home() {
             </div>
           </div>
           <div className="px-12 inline-flex max-sm:flex-col items-center justify-center w-full my-16 ">
-            <div className="border-r-2 border-yellow-300 px-8  py-8">
+            <div className="border-r-2 border-yellow-300 px-8  py-8 max-sm:border-none">
               <div className="line-through decoration-red-500">₹4000</div>
               <div className={paytone.className}>
                 <div className="text-5xl">₹ 2999</div>
@@ -135,14 +135,14 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="">
-                  <button className="text-lg text-center items-center bg-yellow-300 text-yellow-500 bg-opacity-15 px-20 max-sm:px-4 py-4 rounded-2xl">
+                  <button className="text-lg text-center items-center bg-yellow-300 text-yellow-500 bg-opacity-5 px-20 max-sm:px-4 py-4 rounded-2xl">
                     Add to Cart
                   </button>
                 </div>
               </div>
             </div>
 
-            <div className="border-r-2 border-yellow-300 px-8 py-8 ml-24 max-sm:mt-24 max-sm:ml-0">
+            <div className="border-r-2 max-sm:border-none border-yellow-300 px-8 py-8 ml-24 max-sm:mt-24 max-sm:ml-0">
               <div className="line-through decoration-red-500">₹8000</div>
               <div className={paytone.className}>
                 <div className="text-5xl">₹ 4000</div>
@@ -192,7 +192,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <button className="text-lg text-center bg-yellow-300 text-yellow-500 bg-opacity-15 px-20 max-sm:px-4 py-4 rounded-2xl">
+                  <button className="text-lg text-center bg-yellow-300 text-yellow-500 bg-opacity-5 px-20 max-sm:px-4 py-4 rounded-2xl">
                     Add to Cart
                   </button>
                 </div>
@@ -249,7 +249,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <button className="text-lg text-center bg-yellow-300 text-yellow-500 bg-opacity-15 px-20 max-sm:px-4 py-4 rounded-2xl">
+                  <button className="text-lg text-center bg-yellow-300 text-yellow-500 bg-opacity-5 px-20 max-sm:px-4 py-4 rounded-2xl">
                     Add to Cart
                   </button>
                 </div>
